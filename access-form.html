@@ -1,0 +1,18 @@
+<!-- access-form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Restricted Access Request</title>
+</head>
+<body>
+  <h1>Restricted Access Request</h1>
+  <p>Please fill out the form below to gain elevated access privileges.</p>
+
+  <form method="POST" action="https://your-honeypot-logger.com/log-form">
+    <label>Email: <input type="email" name="email"></label><br>
+    <label>Access Reason: <input type="text" name="reason"></label><br>
+    <input type="submit" value="Submit Request">
+  </form>
+</body>
+</html>
