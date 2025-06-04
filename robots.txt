@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /don't-visit.html
+Disallow: /do-not-visit.html
