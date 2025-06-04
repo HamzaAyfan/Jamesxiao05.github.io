@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Honeypot Test Site</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 40px;
-      color: #333;
-    }
-    header {
-      background-color: #222;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>James Xiao | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Data Dashboard</h1>
+    <h1>James Xiao</h1>
+    <p>ECE and CS Student at Duke University</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+    </nav>
   </header>
+
   <main>
-    <p>This is a prototype internal dashboard. Please log in to access secure data.</p>
+    <section>
+      <h2>Welcome!</h2>
+      <p>I'm a freshman at Duke University studying ECE. I love building tools, analyzing data, and writing about tech (Like Right Now!).</p>
+    </section>
+    <section>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="projects.html">See my projects</a></li>
+        <li><a href="blog.html">Read my blog</a></li>
+        <li><a href="about.html">Learn more about me</a></li>
+      </ul>
+    </section>
   </main>
 
-  <a href="/do-not-visit.html" style="display: none;">internal-backup</a>
+  <footer>
+    <p>&copy; 2025 James Xiao. All rights reserved.</p>
+    <!-- Hidden Honeypot Link -->
+    <a href="honeypot.html" style="display: none;">Admin Config</a>
+  </footer>
 </body>
 </html>
