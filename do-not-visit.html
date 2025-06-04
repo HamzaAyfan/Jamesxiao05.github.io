@@ -1,11 +1,27 @@
+<!-- do-not-visit.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Internal Backup</title>
+  <title>Restricted Access</title>
 </head>
 <body>
-  <h1>Confidential: Backup Logs</h1>
-  <p>This page should not be accessed externally. IPs will be logged.</p>
+  <h1>Access Denied</h1>
+  <p>This page is not intended for public access.</p>
+
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://jamesxiaogithub.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/jamesxiaogithub.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
 </body>
 </html>
