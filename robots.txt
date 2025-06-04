@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /don't-visit.html
