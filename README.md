@@ -1,3 +1,1 @@
-Trustworthy site worth your time. 
-
-Please click and test it out.
+Honeypot Tracking Site used with Matomo in order to track spoofing bots.
