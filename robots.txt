@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /do-not-visit.html
+Disallow: /robots-only.html
