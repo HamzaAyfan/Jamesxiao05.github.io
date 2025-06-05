@@ -49,6 +49,16 @@ nav a:hover {
   box-shadow: 0 0 20px rgba(255, 76, 41, 0.1);
 }
 
+.blog-image {
+  max-width: 100%;
+  height: auto;
+  width: 400px; /* or a size you prefer */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin: 1rem auto; /* center the image */
+}
+
 /* Links & Buttons */
 a.button, .btn {
   display: inline-block;
