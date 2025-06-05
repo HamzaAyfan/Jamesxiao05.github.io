@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>James Xiao | Student Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exclusive insights and data analysis on web traffic patterns.">
+  <meta name="keywords" content="analytics, web traffic, SEO, data analysis, bots">
+  <title>James Xiao – Web Traffic Insights</title>
   <link rel="stylesheet" href="style.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Understanding Web Traffic Patterns",
+    "author": {
+      "@type": "Person",
+      "name": "James Xiao"
+    },
+    "datePublished": "2025-06-05",
+    "image": "https://jamesxiao05.github.io/GithubImage.png",
+    "articleBody": "In-depth analysis of web traffic and bot behavior..."
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <h1>James Xiao</h1>
-    <p>ECE and CS Student at Duke University</p>
+  <header class="fade-in">
+    <h1>James Xiao – Exploring the Web</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
       <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="access-form.html">Access Form</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome!</h2>
-      <p>I'm a freshman at Duke University studying ECE. I love building tools, analyzing data, and writing about tech (Like Right Now!).</p>
+  <main class="container">
+    <section class="fade-in">
+      <h2>Latest Article</h2>
+      <p>Explore how bots interact with web content and what patterns emerge in traffic analysis.</p>
+      <a href="blog.html" class="button">Read More</a>
     </section>
-    <section>
-      <h2>Quick Links</h2>
-      <ul>
-        <li><a href="projects.html">See my projects</a></li>
-        <li><a href="blog.html">Read my blog</a></li>
-        <li><a href="about.html">Learn more about me</a></li>
-      </ul>
+
+    <section class="fade-in">
+      <h2>Projects</h2>
+      <p>Learn more about my ongoing experiments in anomaly detection and honeypot deployment.</p>
+      <a href="projects.html" class="button">View Projects</a>
+    </section>
+
+    <section class="fade-in">
+      <h2>Submit Access Request</h2>
+      <p>Fill out our access form to request additional materials or private reports.</p>
+      <a href="access-form.html" class="button">Access Form</a>
     </section>
   </main>
 
-  <footer>
-  <p>&copy; 2025 James Xiao.</p>
+  <footer class="fade-in">
+    <p>&copy; 2025 James Xiao. All rights reserved.</p>
+  </footer>
 
-  <!-- Honeypot hidden links -->
-  <a href="do-not-visit.html" style="display: none;">Secret Settings</a>
-  <a href="access-form.html" style="display: none;">Request Admin Access</a>
-</footer>
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
 </body>
 </html>
