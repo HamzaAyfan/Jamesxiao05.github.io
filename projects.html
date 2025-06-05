@@ -2,137 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Projects | James Xiao</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects on anomaly detection and honeypot deployment." />
+  <meta name="keywords" content="projects, anomaly detection, honeypots, web scraping, bots" />
+  <title>Projects – James Xiao</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Projects</h1>
+    <h1>James Xiao</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
       <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Fake Data Crawler</h2>
-      <p>A tool that scrapes open data from public sources (or so it claims!).</p>
-      <a href="downloads/fake_dataset.csv">Download Sample Dataset</a>
-    </section>
-    <section>
-      <h2>Social Media Analyzer</h2>
-      <p>Basic sentiment analysis app for Twitter data using Python & NLTK.</p>
-      <a href="#">View on GitHub</a>
-    </section>
-  </main>
-
-  <footer>
-  <p>&copy; 2025 James Xiao. All rights reserved.</p>
-</footer>
-
-  <!DOCTYPE html> 
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exclusive insights and data analysis on web traffic patterns.">
-  <meta name="keywords" content="analytics, web traffic, SEO, data analysis, bots">
-  <title>James Xiao – Web Traffic Insights</title>
-  <link rel="stylesheet" href="style.css">
-  
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Understanding Web Traffic Patterns",
-    "author": {
-      "@type": "Person",
-      "name": "James Xiao"
-    },
-    "datePublished": "2025-06-05",
-    "articleBody": "In-depth analysis of web traffic and bot behavior..."
-  }
-  </script>
-</head>
-<body>
-  <header>
-  <h1>James Xiao</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="blog.html">Blog</a>
-    <a href="projects.html">Projects</a>
-  </nav>
-</header>
-
   <main class="container">
     <section class="animate fade-in">
-    <h2>Latest Article</h2>
-    <p>Explore how bots interact with web content and what patterns emerge in traffic analysis.</p>
-    <a href="blog.html" class="button">Read More</a>
-  </section>
+      <h2>Ongoing Projects</h2>
+      <p>Explore my current work on anomaly detection algorithms and honeypot deployments for bot detection.</p>
+    </section>
 
-  <section class="animate slide-left">
-    <h2>Projects</h2>
-    <p>Learn more about my ongoing experiments in anomaly detection and honeypot deployment.</p>
-    <a href="projects.html" class="button">View Projects</a>
-  </section>
+    <section class="animate slide-left">
+      <h3>Project 1: Anomaly Detection Model</h3>
+      <p>Developing a real-time streaming anomaly detector to identify spoofing bots with high accuracy.</p>
+    </section>
 
-  <section class="animate slide-right zoom">
-    <h2>Submit Access Request</h2>
-    <p>Fill out our access form to request additional materials or private reports.</p>
-    <a href="access-form.html" class="button">Access Form</a>
-  </section>
-
-  <section class="blog-preview animate fade-in">
-    <h2>Understanding Web Traffic Patterns</h2>
-    <img src="https://jamesxiao05.github.io/GithubImage.png" alt="Web Traffic Analysis" class="blog-image">
-    <p>In-depth analysis of web traffic and bot behavior...</p>
-  </section>
-    
+    <section class="animate slide-right">
+      <h3>Project 2: Honeypot Deployment</h3>
+      <p>Building honeypot traps to lure and identify malicious scrapers and spoofed bots efficiently.</p>
+    </section>
   </main>
 
   <footer>
-  <p>&copy; 2025 James Xiao. All rights reserved.</p>
-</footer>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.animate');
+    <p>&copy; 2025 James Xiao. All rights reserved.</p>
+  </footer>
 
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px"
-    };
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const animatedElements = document.querySelectorAll('.animate');
 
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      animatedElements.forEach(el => {
+        observer.observe(el);
       });
-    }, observerOptions);
-
-    animatedElements.forEach(el => {
-      observer.observe(el);
     });
-  });
-</script>
-
-  
-<a href="access-form.html" style="display:none;" tabindex="-1" aria-hidden="true">Access Form</a>
-<a href="robots-only.html" style="display:none;" tabindex="-1" aria-hidden="true">Robots Only</a>
-<a href="do-not-visit.html" style="display:none;" tabindex="-1" aria-hidden="true">Do Not Visit</a>
-  
-</body>
-</html>
-
-  <a href="access-form.html" style="display:none;" tabindex="-1" aria-hidden="true">Access Form</a>
-  <a href="robots-only.html" style="display:none;" tabindex="-1" aria-hidden="true">Robots Only</a>
-  <a href="do-not-visit.html" style="display:none;" tabindex="-1" aria-hidden="true">Do Not Visit</a>
-
+  </script>
 </body>
 </html>
