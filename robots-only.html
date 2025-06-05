@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Forbidden Index</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robots Only - Authorized Crawlers</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Restricted page for authorized web crawlers and robots." />
+  <style>
+    body {
+      background: #0b0b0b;
+      color: #ff471a;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 3rem;
+      max-width: 700px;
+      margin: 4rem auto;
+      border: 3px dashed #ff471a;
+      border-radius: 12px;
+      box-shadow: 0 0 12px #ff471a;
+      text-align: center;
+    }
+    h1 {
+      font-weight: 900;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-top: 1rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    code {
+      background: #220000;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      color: #ffa066;
+    }
+  </style>
 </head>
 <body>
-  <h1>Forbidden</h1>
-  <p>This area is restricted. Turn back.</p>
+  <h1>Authorized Robots Only</h1>
+  <p>
+    This page is intended strictly for authorized web crawlers and robots.<br />
+    Unauthorized access or scraping may be monitored and logged.<br />
+    For access details, see <code>robots.txt</code> and site policies.<br />
+  </p>
 
-  <!-- Matomo -->
-  <script>
-    var _paq = window._paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="https://jamesxiaogithub.matomo.cloud/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '1']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.async=true; g.src='https://cdn.matomo.cloud/jamesxiaogithub.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
+  <p>
+    Common crawler keywords:<br />
+    <code>bot</code>, <code>crawl</code>, <code>spider</code>, <code>fetch</code>, <code>scrape</code>, <code>robot</code>
+  </p>
 </body>
 </html>
