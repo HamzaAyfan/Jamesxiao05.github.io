@@ -1,8 +1,8 @@
 /* Base colors */
 :root {
-  --color-primary: #5a67d8;        /* Indigo Blue */
-  --color-secondary: #9f7aea;      /* Light Purple */
-  --color-bg: #0f111a;             /* Dark Background */
+  --color-primary: #0000cc;        /* Dark Blue */
+  --color-secondary: #0099cc;      /* Light Blue */
+  --color-bg: #ccccff;             /* Purple Light Background */
   --color-text: #e2e8f0;           /* Light Gray / White */
   --color-accent: #f6ad55;         /* Soft Orange for highlights */
 }
