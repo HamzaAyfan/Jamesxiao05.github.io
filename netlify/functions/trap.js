@@ -18,4 +18,4 @@ exports.handler = async function(event, context) {
     headers: { "Content-Type": "text/html" },
     body: `<html><body><h1>Access Denied</h1></body></html>`
   };
-};
+}; 
