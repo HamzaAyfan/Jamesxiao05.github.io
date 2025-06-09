@@ -170,3 +170,101 @@ section:hover {
     padding: 1rem;
   }
 }
+
+/* Duke-inspired Theme Override */
+
+/* Colors */
+:root {
+  --duke-blue: #012169;
+  --duke-light-blue: #00539b;
+  --duke-accent-gold: #c99700;
+  --duke-gray: #f4f4f4;
+  --duke-dark-gray: #333333;
+}
+
+/* Body background and text */
+body {
+  background-color: var(--duke-gray);
+  color: var(--duke-dark-gray);
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--duke-blue);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Nav links */
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: var(--duke-accent-gold);
+}
+
+/* Hero / Main sections */
+main, section {
+  padding: 2rem 3rem;
+  background-color: white;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--duke-blue);
+  font-family: Georgia, 'Times New Roman', serif;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+button, .button, input[type="submit"] {
+  background-color: var(--duke-blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover, input[type="submit"]:hover {
+  background-color: var(--duke-light-blue);
+}
+
+/* Footer */
+footer {
+  background-color: var(--duke-blue);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+/* Animations — KEEP your existing ones */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
